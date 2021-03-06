@@ -5,7 +5,6 @@
  * Suha Shafi
  * Safiya Al jahdali
  */
-package floydsphase1;
 public class FloydsPhase1 {
 
     /**
