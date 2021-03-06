@@ -37,7 +37,7 @@ public class FloydsPhase1 {
          
         
         
-        // PRINT R0 (THE WEIGHT MATRIX) 
+        // PRINT D0 (THE WEIGHT MATRIX) 
         System.out.println("The Weight Matrix is (D0): \n");
         
         // Print the letters (A-J) for the columns
