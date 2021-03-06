@@ -1,4 +1,4 @@
-/** Prim's Algorithm 
+/** Floyd's Algorithm 
  * CPCS324 Project Phase 1 - DAR
  * 
  * Shahad Shamsan
