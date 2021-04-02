@@ -135,10 +135,17 @@ public class CPCS324PrjPhase2 {
 
         // to make the graph (we enter n and m)
         public void make_graph(Graph graph) {
-            // instance of Random class
+            // Random object
             Random random = new Random();
-
-            for (int i = 0; i < graph.edges; i++) {
+            // ensure that all vertices are connected
+            for (int i = 0; i < vertices-1; i++) {
+                    int w = random.nextInt(10) + 1;
+                    addEdge(i,i+1,w); 
+            }
+            
+            // generate the rest of edges randomly
+            int rem_edges = edges-vertices-1;
+            for (int i = 0; i < rem_edges; i++) {
                 // Generate random vertices and edges
                 int source = random.nextInt(graph.vertices);
                 int dest = random.nextInt(graph.vertices);
@@ -153,7 +160,7 @@ public class CPCS324PrjPhase2 {
                 addEdge(source, dest, weight);
                 
                 // Print the full graph
-                System.out.println(source + " - " + dest + ": " + weight);
+                System.out.println(source + " - " + dest + ", weight= " + weight);
 
             }
         }
